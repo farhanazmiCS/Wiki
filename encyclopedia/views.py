@@ -26,7 +26,7 @@ def entry(request, entry):
         # Render the Html file
         return render(request, f"encyclopedia/{entry}.html")
 
-def create_page(request):
+def create(request):
     if request.method == "POST":
         # Retrieve values from POST
         header = request.POST.get('title')
@@ -63,6 +63,7 @@ def search(request):
         return render(request, "encyclopedia/notfound.html")
     else:
         return render(request, "encyclopedia/searchresults.html", {
+            "query": query,
             "results": matched
         })
 
