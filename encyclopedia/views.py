@@ -53,12 +53,11 @@ def search(request):
     query_lower = str(query).lower()
     # An empty list which will store the matched search queries
     matched = []
-    for entry in enumerate(util.list_entries()):
-        if query_lower == entry[1].lower():
+    for entry in util.list_entries():
+        if query_lower == entry.lower():
             return redirect(f'wiki/{query_lower}')
-        elif query_lower in entry[1].lower():
-            matched.append(entry[1])
-        enumerate(entry)
+        elif query_lower in entry.lower():
+            matched.append(entry)
     if matched == []:
         return render(request, "encyclopedia/notfound.html")
     else:
