@@ -1,4 +1,4 @@
-# CS50 Web Project 1, Wiki
+# Wiki
 
 ## About
 
