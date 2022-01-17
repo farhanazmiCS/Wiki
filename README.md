@@ -1,9 +1,9 @@
 # Wiki
 
-## About
+## About this app
 
-A Django project that allows the user to view, search, edit and add new wiki entries.
+A Django web application that allows the user to view, search, edit and add new wiki entries.
 
-## Youtube Link
+## Video Demo
 
-https://youtu.be/RhSKpX5jU-0
+You can view this application in action [here](https://youtu.be/RhSKpX5jU-0)!
